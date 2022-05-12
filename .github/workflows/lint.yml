@@ -17,6 +17,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Install clang-format tool
         run: |
-          bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
+          sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
           sudo apt-get update
           sudo apt-get install clang-format-14
