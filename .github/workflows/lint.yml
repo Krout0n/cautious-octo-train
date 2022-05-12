@@ -15,3 +15,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Install clang-format tool
+        run: |
+          sudo apt-get update
+          sudo apt-get install clang-format-14
